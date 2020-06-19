@@ -1,0 +1,511 @@
+@import url(https://fonts.googleapis.com/css?family=Mukta:200,300,regular,500,600,700,800);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: 'Mukta', sans-serif;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+
+/* COMMON */
+
+.heading {
+    font-size: 2.5rem;
+    color: #22486c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding-top: 5rem;
+}
+
+
+
+/*  CONTAINER */
+
+.container {
+    background-image: linear-gradient(rgba(34,72,108,.1), rgba(34,72,108,.1)), url(images/houseplant.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 1rem auto;
+    width: 95%;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+
+/* NAVBAR */
+
+nav {
+    width: 95%;
+    height: 3.3rem;
+    position: fixed;
+    top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    z-index: 100;
+}
+
+nav span {
+    margin-left: 45rem;
+}
+
+ul a {
+    color: #22486c;
+    font-size: 1rem;
+    margin: 0 2.2rem;
+}   
+
+.logo {
+    width: 9rem;
+    margin: .1rem 5 0 1rem;
+}
+
+
+
+
+
+
+/* HERO */
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero {
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+}
+
+.hero h1, .hero h3 {
+    color: #22486c;
+    margin: .2rem auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #51aa3a;
+    color: #fff;
+    width: 11rem;
+    font-size: 1.1rem;
+    padding: .8rem;
+    border-radius: .4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.established {
+    position: absolute;
+    top: 54rem;
+    left: 10rem;
+    color: #22486c;
+    font-size: .8rem;
+    font-style: cursive;
+}
+
+
+
+
+
+/* ABOUT SECTION */
+
+.about-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    /* background-color: rgba(34,72,108,.1); */
+    background-color: rgb(239, 239, 239);
+}
+
+.about-card {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-bottom: 2.4rem;
+}
+
+.card-1 {
+    margin-top: 4rem;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.about-photo img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5rem;
+}
+
+.about-text {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.about-text h2, .about-text p {
+    color: #22486c;
+}
+
+.about-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+
+
+/* TESTIMONIALS */
+
+.testimonials-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(34,72,108,.1);
+    position: relative;
+    margin: 0 auto;
+}
+
+.cards {
+    width: 50%;
+    height: 65vh;
+    margin: 2rem auto;
+    display: flex;
+}
+
+.cards-left, .cards-right {
+    width: 50%;
+    height: 100%;
+    margin: 0 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.card {
+    background-color: rgba(34,72,108,.8);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(34,72,108,.4);
+}
+
+.card blockquote {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0 3rem;
+}
+
+.author {
+    width: 100%;
+    font-size: .8rem;
+    padding: 0 3rem;
+    font-style: italic;
+    margin-top: .4rem;
+}
+
+
+
+/* SERVICES */
+
+.services-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    /* background-color: rgba(34,72,108,.1); */
+    /* background-color: rgb(239, 239, 239); */
+    background-color: #fff;
+}
+
+.services-cards {
+    width: 50%;
+    height: 65vh;
+    margin: 2rem auto;
+    display: flex;
+}
+
+.services-card-1, .services-card-2 {
+    width: 50%;
+    height: 100%;
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1.5rem;
+    color: #22486c;
+    /* background-color: rgba(34,72,108,.8); */
+    background-color: rgba(221,221,221,.2);
+    box-shadow: 3px 3px 3px rgba(34,72,108,.4);
+}
+
+.services-card-1 h3, .services-card-2 h3 {
+    font-size: 1.2rem;
+}
+
+.services-card-1 h5, .services-card-2 h5 {
+    font-size: .8rem;
+}
+
+.services-card-1 li, .services-card-2 li {
+    font-size: .8rem;
+    line-height: .6rem;
+}
+
+.services-card-2 p {
+    font-size: .8rem;
+}
+
+
+
+/* FAQ SECTION */
+
+.faq-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(34,72,108,.1);
+    position: relative;
+    margin: 0 auto;
+}
+
+.faq-wrap {
+    width: 50%;
+    height: 65vh;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dl {
+    width: 70%;
+}
+
+dl.faq button {
+    width: 100%;
+    margin: .6rem auto;
+    padding: .8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+    color: #22486c;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+}
+
+dl.faq i {
+    margin: .4rem 3rem 0 2rem;
+}
+
+dl.faq p {
+    display: none;
+}
+
+
+
+/* CONTACT US */
+
+.contacts-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    background-color: rgba(34,72,108,.9);
+}
+
+.heading-contacts {
+    font-size: 2.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding-top: 5rem;
+}
+
+.contact-wrap {
+    width: 50%;
+    height: 70vh;
+    margin: 2rem auto;
+}
+
+.contact-tel, .contact-email, .contact-form, .footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #22486c;
+}
+
+.contact-tel, .contact-email, .contact-form {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: .4rem;
+    margin-bottom: .8rem;
+}
+
+.contact-tel h5, .contact-email h5, .contact-form h5 {
+    font-size: 1.1rem;
+    margin-bottom: .2rem;
+}
+
+.contact-form h5 {
+    margin-bottom: .4rem;
+}
+
+.contact-tel p, .contact-email p {
+    font-size: .9rem;
+}
+
+.contact-form {
+    width: 60%;
+    height: 60%;
+    background-color: #fff;
+    padding: 0.4rem;
+}
+
+form input, form label {
+    display: block;
+}
+
+form label {
+    text-align: left;
+    font-weight: 500;
+    padding-bottom: .2rem;
+    font-size: .8rem;
+}
+
+form input {
+    border-radius: 8px;
+    padding: .2rem;
+    margin-bottom: 0.3rem;
+    color: #22486c;
+    background-color: #ddd;
+    box-shadow: 1px 1px rgb(0, 0, 0, .2);
+    border: none;
+}
+
+form input:focus, textarea:focus {
+    border: 1px solid rgba(34,72,108,.6);
+}
+
+.top-half-form {
+    width: 80%;
+    height: 15%;
+    margin: 0 auto;
+}
+.bottom-half-form {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.form-name, .form-email {
+    float: left;
+}
+
+.form-surname, .form-email-verify {
+    float: right;
+}
+
+textarea {
+    width: 100%;
+    height: 6rem;
+    resize: none;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgb(0, 0, 0, .2);
+    border-radius: 6px;
+    color: #22486c;
+    letter-spacing: .05rem;
+}
+
+.form-message label {
+    padding-top: 4.5rem;
+}
+
+.submit-btn {
+    background-color: #51aa3a;
+    color: #fff;
+    width: 6rem;
+    font-size: 1rem;
+    padding: .3rem;
+    border-radius: .6rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.footer {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5rem;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    background-color: #fff;
+    color: #22486c;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 1600px) {
+    .logo {
+        margin: .1rem 50rem 0 1rem;
+    }
+} */
+
