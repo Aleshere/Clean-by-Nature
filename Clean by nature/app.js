@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 
+
+
 const burger = document.getElementById('burger');
 const ul = document.querySelector('ul');
 const links = document.querySelectorAll('ul li a');
@@ -40,7 +42,7 @@ burger.addEventListener('click', (e) => {
     if(ul.classList != 'show'){
         ul.classList.toggle('show');
     } else {
-    ul.classList.toggle('show');
+        ul.classList.toggle('show');
     }
 
     e.preventDefault();
@@ -56,7 +58,11 @@ burger.addEventListener('touchend', (e) => {
     e.preventDefault();
 })
 
-
+document.addEventListener('click', (e) => {
+    if(e.target.querySelector.value != '.navbar'){
+        ul.classList.remove('show');        
+    }
+})
 
 links.forEach((link) => {
     link.addEventListener('click', () => {
