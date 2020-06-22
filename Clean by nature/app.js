@@ -40,8 +40,10 @@ const links = document.querySelectorAll('ul li a');
 
 burger.addEventListener('click', (e) => {
     if(ul.classList != 'show'){
+        burger.classList.toggle('open');
         ul.classList.toggle('show');
     } else {
+        burger.classList.toggle('open');
         ul.classList.toggle('show');
     }
 
@@ -50,8 +52,10 @@ burger.addEventListener('click', (e) => {
 
 burger.addEventListener('touchend', (e) => {
     if(ul.classList != 'show'){
+        burger.classList.toggle('open');
         ul.classList.toggle('show');
     } else {
+    burger.classList.toggle('open');
     ul.classList.toggle('show');
     }
 
@@ -60,6 +64,7 @@ burger.addEventListener('touchend', (e) => {
 
 document.addEventListener('click', (e) => {
     if(e.target.querySelector.value != '.navbar'){
+        burger.classList.remove('open');
         ul.classList.remove('show');        
     }
 })
@@ -69,6 +74,8 @@ links.forEach((link) => {
         ul.classList.remove('show');
     })
 })
+
+
 
 
 

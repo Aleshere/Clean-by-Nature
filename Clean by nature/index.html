@@ -20,7 +20,12 @@
             <a href="#hero">
                 <img class='logo' src="images/websitelogo_dtbx222.png" alt="Company Logo">
             </a>
-            <button class="burger" id="burger">&#9776</button>
+            <!-- <button class="burger" id="burger">&#9776</button> -->
+            <div class='burger' id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <ul class="navbar">
             <li><a href="#hero">Home</a></li>
@@ -28,7 +33,7 @@
             <li><a href="#forHomes">For Homes</a></li>
             <li><a href="#forOffices">For Offices</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" id="estimate">Get An Estimate</a></li>
             <li><a href="https://www.facebook.com/cleanbynature" target="_blank"><i class="fab fa-facebook"></i></a></li>
         </ul>
     <!-- END OF NAVBAR -->
@@ -244,27 +249,37 @@
             <form class="contact-form" action="#">
                 <h5>Write</h5>
                 <div class="top-half-form">
-                    <div class="form-name">
+                    <div class="form-name group">
+                        <input type="text" id='fname' name='fname' required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
                         <label for="fname">Name</label>
-                        <input type="text" id='fname' name='fname'>
                     </div>
-                    <div class="form-surname">
+                    <div class="form-surname group">
+                        <input type="text" id='surname' name='surname' required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
                         <label for="surname">Surname</label>
-                        <input type="text" id='surname' name='surname'>
                     </div>
                 </div>
                 <div class="bottom-half-form">
-                    <div class="form-email">
+                    <div class="form-email group">
+                        <input type="email" id='email' name='email' required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
                         <label for="email">Email address</label>
-                        <input type="email" id='email' name='email'>
                     </div>
-                    <div class="form-email-verify">
+                    <div class="form-email-verify group">
+                        <input type="email" id='email-verify' name='email-verify' required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
                         <label for="email-verify">Confirm your Email</label>
-                        <input type="email" id='email-verify' name='email-verify'>
                     </div>
-                    <div class="form-message">
+                    <div class="form-message group">
+                        <textarea type="text" id='message' name='message' required></textarea>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
                         <label for="message">Message</label>
-                        <textarea type="text" id='message' name='message' placeholder="Write here your message..."></textarea>
                     </div>
                     <input class='submit-btn' type="submit"></input>
                 </div>
