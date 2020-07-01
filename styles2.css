@@ -79,7 +79,7 @@ body {
 
 nav {
     width: 100%;
-    height: 3.5rem;
+    height: 3.5rem !important;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -190,6 +190,7 @@ ul {
     width: 70%;
     text-align: center;
     margin-left: -100%;
+    padding: 1rem 0;
     animation: .4s forwards close;
     z-index: 4;
 }
@@ -508,7 +509,7 @@ p.accordion.active:after {
 }
 
 div.panel {
-    padding: .3rem 1rem;
+    padding: .7rem 1rem;
     /* background-color: rgba(34,72,108,.1); */
     background-color: rgba(255,255,255,.8);
     color: #22486c;
@@ -592,7 +593,7 @@ div.panel.show {
 .group {
     position: relative;
     margin: .7rem;
-    padding: .8rem 0;
+    padding: 1rem 0;
 }
 
 input, textarea {
@@ -610,6 +611,7 @@ input, textarea {
 textarea {
     resize: none;
     height: 3rem;
+    font-size: 1rem;
     transition: all .3s;
     -moz-transition: 1s;
     -ms-transition: 1s;
@@ -627,8 +629,9 @@ textarea:focus {
 }
 
 #formTopHalf input:focus ~ label,
+#formTopHalf input:required:valid ~ label,
 textarea:focus ~ label {
-    top: -1rem;
+    top: -.3rem;
     font-size: .7rem;
     color: var(--form-input-focus);
 }
@@ -640,12 +643,12 @@ textarea:focus ~ .bar:before {
 
 .top-half-form .group label {
 	color: var(--primary-blue);
-	font-size: .8rem;
+	font-size: 1rem;
 	font-weight: normal;
 	position: absolute;
 	pointer-events: none;
 	left: .4rem;
-	top: .5rem;
+	top: .2rem;
 	transition: .3s ease all;
 }
 

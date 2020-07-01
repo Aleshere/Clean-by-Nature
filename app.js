@@ -119,7 +119,7 @@ const emailVerify = document.getElementById('email-verify');
 
 
 form.addEventListener('click', (e) => {
-    console.log(e);
+
     
     // e.preventDefault();
 
@@ -132,7 +132,6 @@ function checkInputs() {
     const surnameValue = surname.value.trim();
     const streetValue = street.value.trim();
     const zipValue = zip.value.trim();
-    const dayPhoneValue = dayPhone.value.trim();
     const emailValue = email.value.trim();
     const emailVerifyValue = emailVerify.value.trim();
 
@@ -152,7 +151,7 @@ function checkInputs() {
     if(surnameValue === ''){
         // show error
         // add error class
-        setErrorFor(surname, 'Please provide your surname');
+        setErrorFor(surname, 'Please provide your last name');
     } else {
         // add success class
         setSuccessFor(surname)
@@ -174,15 +173,6 @@ function checkInputs() {
     } else {
         // add success class
         setSuccessFor(zip)
-    }
-
-    if(dayPhoneValue === ''){
-        // show error
-        // add error class
-        setErrorFor(dayPhone, 'Please provide a contact number');
-    } else {
-        // add success class
-        setSuccessFor(dayPhone)
     }
 
     if(emailValue === ''){
@@ -233,26 +223,3 @@ function isEmail(email) {
 }
 
 
-
-
-
-
-
-
-
-
-// burger.addEventListener('click', () => {
-//     if(ul.style.display === 'none'){
-//         ul.style.display = 'flex';
-//     } else {
-//     ul.classList.toggle('show');
-//     }
-// })
-
-
-
-// function copyrightUpdate() {
-
-// var date = new Date().getFullYear()>2008&&document.write("-"+new Date().getFullYear());
-// document.getElementById("year").innerHTML = date
-// }
